@@ -1,4 +1,7 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import ReactDOM from 'react-dom/client';
+import 'tailwindcss/tailwind.css';
 import React, { useState, useEffect } from 'react';
 const App: React.FC = () => {
 const [activeCategory, setActiveCategory] = useState('All');
@@ -90,6 +93,342 @@ price: 39.99,
 category: "Home",
 description: "Create a relaxing atmosphere with this set of premium scented candles. Includes three different fragrances to suit your mood.",
 image: "https://readdy.ai/api/search-image?query=Set%20of%20luxury%20scented%20candles%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=8&orientation=squarish"
+},
+{
+id: 9,
+name: "4K Ultra HD Smart TV",
+price: 899.99,
+category: "Electronics",
+description: "Immerse yourself in stunning 4K resolution with this smart TV. Features AI-powered picture quality enhancement and built-in streaming apps.",
+image: "https://readdy.ai/api/search-image?query=Modern%204K%20smart%20TV%20with%20thin%20bezels%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=9&orientation=squarish"
+},
+{
+id: 10,
+name: "Professional DSLR Camera",
+price: 1299.99,
+category: "Electronics",
+description: "Capture life's moments in exceptional detail with this professional DSLR camera. Features advanced autofocus and 4K video recording.",
+image: "https://readdy.ai/api/search-image?query=Professional%20DSLR%20camera%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=10&orientation=squarish"
+},
+{
+id: 11,
+name: "Designer Sunglasses",
+price: 159.99,
+category: "Fashion",
+description: "Protect your eyes in style with these premium designer sunglasses. Features UV protection and durable frame construction.",
+image: "https://readdy.ai/api/search-image?query=Luxury%20designer%20sunglasses%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=11&orientation=squarish"
+},
+{
+id: 12,
+name: "Ergonomic Office Chair",
+price: 299.99,
+category: "Home",
+description: "Work in comfort with this ergonomic office chair. Features adjustable lumbar support and breathable mesh design.",
+image: "https://readdy.ai/api/search-image?query=Modern%20ergonomic%20office%20chair%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=12&orientation=squarish"
+},
+{
+id: 13,
+name: "Smart Home Security Camera",
+price: 129.99,
+category: "Electronics",
+description: "Keep your home safe with this smart security camera. Features night vision and mobile app monitoring.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20security%20camera%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=13&orientation=squarish"
+},
+{
+id: 14,
+name: "Leather Wallet",
+price: 49.99,
+category: "Fashion",
+description: "Organize your essentials with this premium leather wallet. Features multiple card slots and RFID protection.",
+image: "https://readdy.ai/api/search-image?query=Premium%20leather%20wallet%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=14&orientation=squarish"
+},
+{
+id: 15,
+name: "Smart Door Lock",
+price: 199.99,
+category: "Home",
+description: "Secure your home with this smart door lock. Features fingerprint recognition and mobile app control.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20door%20lock%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=15&orientation=squarish"
+},
+{
+id: 16,
+name: "Wireless Gaming Mouse",
+price: 79.99,
+category: "Electronics",
+description: "Enhance your gaming experience with this wireless gaming mouse. Features customizable RGB lighting and precision sensors.",
+image: "https://readdy.ai/api/search-image?query=Modern%20gaming%20mouse%20with%20RGB%20lighting%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=16&orientation=squarish"
+},
+{
+id: 17,
+name: "Designer Watch",
+price: 399.99,
+category: "Fashion",
+description: "Make a statement with this luxury designer watch. Features Swiss movement and sapphire crystal glass.",
+image: "https://readdy.ai/api/search-image?query=Luxury%20designer%20watch%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=17&orientation=squarish"
+},
+{
+id: 18,
+name: "Smart Air Purifier",
+price: 249.99,
+category: "Home",
+description: "Breathe cleaner air with this smart air purifier. Features HEPA filtration and air quality monitoring.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20air%20purifier%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=18&orientation=squarish"
+},
+{
+id: 19,
+name: "Wireless Earbuds",
+price: 159.99,
+category: "Electronics",
+description: "Experience true wireless freedom with these premium earbuds. Features active noise cancellation and touch controls.",
+image: "https://readdy.ai/api/search-image?query=Modern%20wireless%20earbuds%20with%20charging%20case%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=19&orientation=squarish"
+},
+{
+id: 20,
+name: "Designer Belt",
+price: 89.99,
+category: "Fashion",
+description: "Complete your look with this premium leather belt. Features classic design and durable construction.",
+image: "https://readdy.ai/api/search-image?query=Luxury%20leather%20belt%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=20&orientation=squarish"
+},
+{
+id: 21,
+name: "Smart Robot Vacuum",
+price: 399.99,
+category: "Home",
+description: "Keep your floors clean with this smart robot vacuum. Features mapping technology and automatic charging.",
+image: "https://readdy.ai/api/search-image?query=Modern%20robot%20vacuum%20cleaner%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=21&orientation=squarish"
+},
+{
+id: 22,
+name: "Gaming Laptop",
+price: 1499.99,
+category: "Electronics",
+description: "Experience powerful gaming performance with this gaming laptop. Features high-refresh display and RGB keyboard.",
+image: "https://readdy.ai/api/search-image?query=Modern%20gaming%20laptop%20with%20RGB%20keyboard%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=22&orientation=squarish"
+},
+{
+id: 23,
+name: "Designer Backpack",
+price: 129.99,
+category: "Fashion",
+description: "Carry your essentials in style with this designer backpack. Features water-resistant material and laptop compartment.",
+image: "https://readdy.ai/api/search-image?query=Modern%20designer%20backpack%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=23&orientation=squarish"
+},
+{
+id: 24,
+name: "Smart Thermostat",
+price: 179.99,
+category: "Home",
+description: "Control your home temperature smartly with this thermostat. Features energy saving modes and mobile app control.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20thermostat%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=24&orientation=squarish"
+},
+{
+id: 25,
+name: "Mechanical Keyboard",
+price: 149.99,
+category: "Electronics",
+description: "Type with precision using this mechanical keyboard. Features customizable RGB lighting and premium switches.",
+image: "https://readdy.ai/api/search-image?query=Modern%20mechanical%20keyboard%20with%20RGB%20lighting%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=25&orientation=squarish"
+},
+{
+id: 26,
+name: "Running Shoes",
+price: 129.99,
+category: "Sports",
+description: "Achieve your running goals with these premium running shoes. Features responsive cushioning and breathable design.",
+image: "https://readdy.ai/api/search-image?query=Modern%20running%20shoes%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=26&orientation=squarish"
+},
+{
+id: 27,
+name: "Smart Light Bulbs Set",
+price: 79.99,
+category: "Home",
+description: "Create the perfect ambiance with these smart light bulbs. Features millions of colors and voice control.",
+image: "https://readdy.ai/api/search-image?query=Smart%20LED%20light%20bulbs%20set%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=27&orientation=squarish"
+},
+{
+id: 28,
+name: "Wireless Charging Pad",
+price: 39.99,
+category: "Electronics",
+description: "Charge your devices wirelessly with this sleek charging pad. Features fast charging and LED indicators.",
+image: "https://readdy.ai/api/search-image?query=Modern%20wireless%20charging%20pad%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=28&orientation=squarish"
+},
+{
+id: 29,
+name: "Tennis Racket",
+price: 159.99,
+category: "Sports",
+description: "Improve your tennis game with this professional racket. Features lightweight design and optimal control.",
+image: "https://readdy.ai/api/search-image?query=Professional%20tennis%20racket%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=29&orientation=squarish"
+},
+{
+id: 30,
+name: "Smart Coffee Maker",
+price: 199.99,
+category: "Home",
+description: "Start your day with perfectly brewed coffee. Features programmable settings and mobile app control.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20coffee%20maker%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=30&orientation=squarish"
+},
+{
+id: 31,
+name: "Fitness Tracker",
+price: 99.99,
+category: "Electronics",
+description: "Monitor your health and fitness with this advanced tracker. Features heart rate monitoring and sleep tracking.",
+image: "https://readdy.ai/api/search-image?query=Modern%20fitness%20tracker%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=31&orientation=squarish"
+},
+{
+id: 32,
+name: "Basketball",
+price: 29.99,
+category: "Sports",
+description: "Play like a pro with this premium basketball. Features superior grip and durability.",
+image: "https://readdy.ai/api/search-image?query=Professional%20basketball%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=32&orientation=squarish"
+},
+{
+id: 33,
+name: "Smart Doorbell",
+price: 169.99,
+category: "Home",
+description: "Monitor your doorstep with this smart doorbell. Features HD video and two-way audio.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20doorbell%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=33&orientation=squarish"
+},
+{
+id: 34,
+name: "Portable Power Bank",
+price: 49.99,
+category: "Electronics",
+description: "Stay charged on the go with this power bank. Features fast charging and multiple ports.",
+image: "https://readdy.ai/api/search-image?query=Modern%20portable%20power%20bank%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=34&orientation=squarish"
+},
+{
+id: 35,
+name: "Yoga Block Set",
+price: 24.99,
+category: "Sports",
+description: "Perfect your yoga poses with these premium blocks. Features high-density foam and non-slip surface.",
+image: "https://readdy.ai/api/search-image?query=Yoga%20block%20set%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=35&orientation=squarish"
+},
+{
+id: 36,
+name: "Smart Scale",
+price: 79.99,
+category: "Home",
+description: "Track your weight and body composition with this smart scale. Features Bluetooth connectivity and app integration.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20scale%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=36&orientation=squarish"
+},
+{
+id: 37,
+name: "Wireless Keyboard",
+price: 89.99,
+category: "Electronics",
+description: "Type comfortably with this wireless keyboard. Features long battery life and ergonomic design.",
+image: "https://readdy.ai/api/search-image?query=Modern%20wireless%20keyboard%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=37&orientation=squarish"
+},
+{
+id: 38,
+name: "Resistance Bands Set",
+price: 34.99,
+category: "Sports",
+description: "Get a full-body workout with these resistance bands. Features different resistance levels and carrying case.",
+image: "https://readdy.ai/api/search-image?query=Resistance%20bands%20set%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=38&orientation=squarish"
+},
+{
+id: 39,
+name: "Smart Blender",
+price: 149.99,
+category: "Home",
+description: "Create perfect smoothies with this smart blender. Features multiple speed settings and app-controlled recipes.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20blender%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=39&orientation=squarish"
+},
+{
+id: 40,
+name: "Webcam",
+price: 89.99,
+category: "Electronics",
+description: "Look professional in video calls with this HD webcam. Features auto-focus and noise-canceling microphone.",
+image: "https://readdy.ai/api/search-image?query=Modern%20HD%20webcam%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=40&orientation=squarish"
+},
+{
+id: 41,
+name: "Dumbbell Set",
+price: 119.99,
+category: "Sports",
+description: "Build strength with this adjustable dumbbell set. Features quick weight adjustment and storage stand.",
+image: "https://readdy.ai/api/search-image?query=Adjustable%20dumbbell%20set%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=41&orientation=squarish"
+},
+{
+id: 42,
+name: "Smart Toaster",
+price: 79.99,
+category: "Home",
+description: "Make perfect toast every time with this smart toaster. Features digital controls and multiple settings.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20toaster%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=42&orientation=squarish"
+},
+{
+id: 43,
+name: "USB-C Hub",
+price: 49.99,
+category: "Electronics",
+description: "Expand your connectivity with this USB-C hub. Features multiple ports and fast data transfer.",
+image: "https://readdy.ai/api/search-image?query=Modern%20USB-C%20hub%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=43&orientation=squarish"
+},
+{
+id: 44,
+name: "Jump Rope",
+price: 19.99,
+category: "Sports",
+description: "Get a cardio workout with this premium jump rope. Features adjustable length and comfortable handles.",
+image: "https://readdy.ai/api/search-image?query=Professional%20jump%20rope%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=44&orientation=squarish"
+},
+{
+id: 45,
+name: "Smart Garden",
+price: 199.99,
+category: "Home",
+description: "Grow fresh herbs indoors with this smart garden. Features automatic watering and LED grow lights.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20indoor%20garden%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=45&orientation=squarish"
+},
+{
+id: 46,
+name: "Wireless Presenter",
+price: 39.99,
+category: "Electronics",
+description: "Control your presentations with this wireless presenter. Features laser pointer and intuitive controls.",
+image: "https://readdy.ai/api/search-image?query=Modern%20wireless%20presenter%20remote%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=46&orientation=squarish"
+},
+{
+id: 47,
+name: "Exercise Ball",
+price: 29.99,
+category: "Sports",
+description: "Improve your core strength with this exercise ball. Features anti-burst material and pump included.",
+image: "https://readdy.ai/api/search-image?query=Exercise%20stability%20ball%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=47&orientation=squarish"
+},
+{
+id: 48,
+name: "Smart Trash Can",
+price: 89.99,
+category: "Home",
+description: "Keep your space clean with this smart trash can. Features motion sensor lid and odor control.",
+image: "https://readdy.ai/api/search-image?query=Modern%20smart%20trash%20can%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=48&orientation=squarish"
+},
+{
+id: 49,
+name: "Cable Organizer",
+price: 19.99,
+category: "Electronics",
+description: "Keep your cables tidy with this cable organizer. Features multiple compartments and magnetic closure.",
+image: "https://readdy.ai/api/search-image?query=Modern%20cable%20organizer%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=49&orientation=squarish"
+},
+{
+id: 50,
+name: "Foam Roller",
+price: 34.99,
+category: "Sports",
+description: "Recover faster with this premium foam roller. Features textured surface and durable construction.",
+image: "https://readdy.ai/api/search-image?query=Professional%20foam%20roller%20on%20minimalist%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20ultra%20high%20definition%2C%20photorealistic%2C%20studio%20lighting&width=400&height=400&seq=50&orientation=squarish"
 }
 ]);
 setIsLoading(false);
@@ -427,13 +766,13 @@ Remove
 <span className="font-semibold">Total:</span>
 <span className="font-bold text-xl">${cartTotal.toFixed(2)}</span>
 </div>
-<button 
-  onClick={() => {
-    setIsCartOpen(false);
-    setShowCheckoutForm(true);
-  }}
-  className="w-full bg-indigo-600 text-white py-3 rounded-lg transition-colors duration-300 hover:bg-indigo-700 !rounded-button cursor-pointer whitespace-nowrap">
-  Proceed to Checkout
+<button
+onClick={() => {
+setIsCartOpen(false);
+setShowCheckoutForm(true);
+}}
+className="w-full bg-indigo-600 text-white py-3 rounded-lg transition-colors duration-300 hover:bg-indigo-700 !rounded-button cursor-pointer whitespace-nowrap">
+Proceed to Checkout
 </button>
 </div>
 )}
@@ -467,12 +806,10 @@ name: '',
 email: '',
 address: ''
 };
-
 if (!checkoutData.name.trim()) {
 errors.name = 'Name is required';
 hasErrors = true;
 }
-
 if (!checkoutData.email.trim()) {
 errors.email = 'Email is required';
 hasErrors = true;
@@ -480,17 +817,14 @@ hasErrors = true;
 errors.email = 'Invalid email format';
 hasErrors = true;
 }
-
 if (!checkoutData.address.trim()) {
 errors.address = 'Address is required';
 hasErrors = true;
 }
-
 if (hasErrors) {
 setFormErrors(errors);
 return;
 }
-
 // Show success message and reset cart
 showNotification('Order placed successfully! Thank you for shopping with us.');
 setCart([]);
@@ -553,7 +887,6 @@ Place Order
 </div>
 </div>
 )}
-
 {/* Overlay for cart sidebar */}
 {isCartOpen && (
 <div
@@ -561,7 +894,7 @@ className="fixed inset-0 bg-black bg-opacity-50 z-40"
 onClick={() => setIsCartOpen(false)}
 ></div>
 )}
-<style jsx>{`
+<style >{`
 @keyframes fadeIn {
 from { opacity: 0; transform: translateY(10px); }
 to { opacity: 1; transform: translateY(0); }
@@ -582,4 +915,12 @@ input[type=number] {
 </div>
 );
 };
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 export default App
